@@ -1,0 +1,18 @@
+1. Giải thích các câu lệnh
+git init: Khởi tạo git cho project
+git add <file_name>: Add file vào Staging Area
+git add . : Add tất cả file ở Working Directory vào Staging Area
+git commit -m “message”: Commit các file ở Staging Area, kèm message
+
+2. Liệt kê các file vào từng vùng sau khi chạy từng câu lệnh
+a. Tạo 3 file: file1, file2, file3 
+b. Chạy lệnh: git init 
+c. Chạy lệnh: git commit -m”init project”
+d. Chạy lệnh: git add file1
+e. Chạy lệnh: git commit -m”add file1”
+f. Chạy lệnh: git add file
+
+Kết quả: 
+file1: Ở vùng Repository
+file2: Ở vùng Staging Area
+file3: Ở vùng Working Directory
