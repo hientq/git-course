@@ -1,0 +1,24 @@
+1. Giải thích các câu lệnh
+git commit --amend : Sửa commit hiện tại
+git commit --amend -m”<message>” : Sửa commit hiện tại cùng với short message
+git restore --staged <file> : Đưa file ở vùng Staging Area về lại Working Directory
+git reset HEAD~1. : Đưa con trỏ HEAD (và branch đang trỏ tới) về ngược lại 1 commit
+
+2. Hãy liệt kê các file theo từng
+vùng, liệt kê các commit và message tương ứng sau khi thao tác một loạt các lệnh sau
+a. Tạo 3 file: file1, file2, file3 : 3 file đang ở Working Directory của system và chưa được git quản lý
+b. Chạy lệnh: git init : Khởi tạo git và các file được git quản lý, đang ở vùng Working Directory
+c. Chạy lệnh: git commit -m”init project” : Commit với short message "init project"
+d. Chạy lệnh: git add file1 : Đưa file1 vào vùng Staging Area
+e. Chạy lệnh: git commit -m”add file” : Commit, và file1 được đưa vào vùng repository
+f. Chạy lệnh: git add . : Đưa tất cả các file ở Working Directory vào Staging Area
+g. Chạy lệnh: git restore --staged file2 : Đưa file2 về lại từ Staging Area sang Working Directory
+h. Chạy lệnh: git commit -m”add all files”: Commit, file 1 và file3 sang vùng repository
+i. Chạy lệnh: git reset HEAD~1 : Đưa con trỏ HEAD và branch lùi về một commit
+
+3. Hãy liệt kê các file theo từng vùng sau khi thao tác các lệnh sau:
+a. Chạy lệnh git init : Khởi tạo git
+b. Tạo file file1.txt, file2.txt, oops/file3.txt. : Các file này đều ở Working Directory do Git quản lý
+c. Thêm file .gitignore, thêm vào 2 dòng file1.txt oops/ : Lúc này chỉ còn file2 và .gitignore ở Working Directory
+d. Chạy lệnh: git add . : Thêm file2 và .gitignore vào Staging Area
+e. Chạy lệnh: git commit -m"init project" : Commit, file2 và .gitignore vào Repository
