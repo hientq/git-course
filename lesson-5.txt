@@ -1,0 +1,15 @@
+1. Cấu trúc DOM cơ bản của một trang web bao gồm các thẻ gì?
+- html
+- head
+- body
+    - h1 đến h6
+    - a
+    - img
+    - table
+    - form, input, button
+    - div
+2. Hãy mô tả cấu trúc html của 1 bảng (table)
+- table: Thẻ mở đầu cho định dạng table
+- tbody: Định nghĩa phần body của table
+- tr: Định nghĩa một row của table
+- td: Định nghĩa một cell của table, là nơi chứa value
